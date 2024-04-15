@@ -1,6 +1,6 @@
 #include "get_next_line.h"
 
-char	*ft_strchar(char * depot, intc)
+char	*ft_strchar(char * depot, int c)
 {
 	int	i;
 
@@ -52,7 +52,7 @@ char	*ft_substr(char *depot,unsigned int start, size_t len)
 	while (start < ft_strlen(depot) && i < len && depot[start])
 		res[i++] = depot[start++];
 	res[i] = '\0';
-	restun (res);
+	return (res);
 }
 
 char	*ft_strjoin(char *depot, char *buf)
